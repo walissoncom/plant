@@ -252,3 +252,155 @@ a:hover {
     right: -19px;
 }
 
+/* ===== Card ===== */
+@media (min-width: 1200px) {
+    .card {
+        width: 70%;
+    }
+}
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .card-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.card-title::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: lightgray;
+    bottom: -15px;
+}
+
+.card-txt {
+    color: darkgray;
+    line-height: 1.8;
+    font-size: 14px;
+    margin: 30px 0;
+}
+
+.card-btn {
+    padding: 15px 40px;
+    font-weight: 700;
+    border: 1px solid gainsboro;
+    background-color: #FFF;
+}
+
+.card-btn:hover {
+    border-color: #106213;
+    color: #106213;
+}
+
+/* ===== Carousel ===== */
+.carousel {
+    display: flex;
+    margin-top: 70px;
+}
+@media (min-width: 1200px) {
+    .carousel {
+        margin-right: -30px;
+    }
+}
+
+.carousel > * + * {
+    margin-left: 20px;
+}
+
+.carousel > .item > img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* ===== Pagination ===== */
+.pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width: 1200px) {
+    .pagination {
+        padding-right: 50px;
+    }
+}
+
+.pagination .arrows > button {
+    width: 30px;
+    height: 15px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    position: relative;
+}
+
+.pagination .arrows > button > i::before,
+.pagination .arrows > button > i::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.pagination .arrows > button > i::before {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+
+.pagination .arrows > button > i::after {
+    top: 1px;
+    width: 10px;
+    height: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent black black;
+    transform: rotate(45deg);
+    bottom: 0;
+    margin: auto;
+}
+
+.pagination .arrows .arrow-left > i::before {
+    left: 0;
+}
+
+.pagination .arrows .arrow-left > i::after {
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.pagination .arrows .arrow-right > i ::before {
+    right: 0;
+}
+
+.pagination .arrows .arrow-right > i::after {
+    right: 0;
+    transform: rotate(-135deg);
+}
+
+.pagination .page {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pagination .page::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: darkgray;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: calc(-100% -15px);
+}
