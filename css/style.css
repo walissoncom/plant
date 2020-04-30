@@ -126,3 +126,129 @@ a:hover {
     }
 }
 
+/* =====  Center Container ===== */
+.center-container > img {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    object-fit: cover;
+}
+@media (min-width: 768px) {
+    .center-container {
+        margin-top: -30px;
+        margin-bottom: -30px;
+        display: flex;
+        align-items: flex-end;
+        background-color: gainsboro;
+    }
+}
+
+/* ===== Right Container ===== */
+.right-container {
+    margin-top: 50px;
+}
+@media (min-width: 768px) {
+    .right-container {
+        margin-top: 0;
+        padding: 0 0 0 30px;
+    }
+}
+@media (min-width: 1200px) {
+    .right-container {
+        padding-left: 120px;
+    }
+}
+
+.right-container .header {
+    position: absolute;
+    top: 47px;
+    right: 20px;
+}
+@media (min-width: 768px) {
+    .right-container .header {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+}
+@media (min-width: 1200px) {
+    .right-container .header {
+        padding-right: 50px;
+    }
+}
+
+.right-container .header > button {
+    background-color: transparent;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    border: 0;
+    outline: 0;
+}
+@media (min-width: 768px) {
+    .right-container .header > button {
+        height: 15px;
+    }
+}
+
+.right-container .toggle > i::before,
+.right-container .toggle > i::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    margin: auto;
+    right: 0;
+    background-color: #111;
+    width: 78%;
+    transition: 200ms;
+}
+
+.right-container .toggle > i::before {
+    top: 0;
+}
+
+.open .right-container .toggle > i::before {
+    transform: rotate(45deg);
+    bottom: 0;
+}
+
+.right-container .toggle > i::after {
+    bottom: 0;
+}
+
+.open .right-container .toggle > i::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.right-container .search > i::before,
+.right-container .search > i::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    margin: auto;
+    right: 0;
+    border-color: #111;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.right-container .search > i::before {
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.right-container .search > i::after {
+    bottom: 1px;
+    border: 0;
+    width: 5px;
+    height: 2px;
+    background: #000;
+    transform: rotate(45deg);
+    right: -19px;
+}
+
