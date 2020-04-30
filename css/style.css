@@ -249,7 +249,8 @@ a:hover {
     height: 2px;
     background: #000;
     transform: rotate(45deg);
-    right: -19px;
+    right: -15px;
+    top: 15px;
 }
 
 /* ===== Card ===== */
@@ -329,6 +330,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
     .pagination {
+        padding-left: 5px;
         padding-right: 50px;
     }
 }
@@ -355,6 +357,8 @@ a:hover {
     width: 20px;
     height: 2px;
     background-color: black;
+    left: 9px;
+    top: 1px;
 }
 
 .pagination .arrows > button > i::after {
@@ -402,5 +406,5 @@ a:hover {
     top: 0;
     bottom: 0;
     margin: auto;
-    left: calc(-100% -15px);
+    left: -40px;
 }
