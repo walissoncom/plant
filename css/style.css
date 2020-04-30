@@ -53,3 +53,76 @@ a:hover {
     }
 }
 
+/* ===== Left Container ===== */
+.left-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+@media (min-width: 768px) {
+    .left-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 150px;
+    }
+}
+@media (min-width: 1200px) {
+    .left-container {
+        max-width: 210px;
+    }
+}
+
+.left-container > .title {
+    flex: 1 100%;
+    margin: 70px 0 50px;
+}
+@media (min-width: 768px) {
+    .left-container > .title {
+        margin: 0;
+        flex: none;
+        transform: rotater(-90deg);
+        font-size: 30px;
+    }
+}
+
+/* ===== Logo ===== */
+.logo {
+    font-size: 20px;
+}
+@media (min-width: 768px) {
+    .logo {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+/* ===== Social ===== */
+.social {
+    margin: 0 30% 0 0; 
+    list-style: none;
+    display: flex;
+}
+@media (min-width: 768px) {
+    .social {
+        margin-right: 0;
+        order: 1;
+    }
+}
+
+.social > * + * {
+    margin-left: 20px;
+}
+
+.social > li > a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+@media (min-width: 768px) {
+    .social > li > a {
+        font-size: 12px;
+    }
+}
+
