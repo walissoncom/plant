@@ -6,7 +6,7 @@ Static website created for studying purpose.
 
 # Live Demo
 
-[plant.walisson.com](http://plant.walisson.com/)
+<a href="http://plant.walisson.com/" target="_blank">plant.walisson.com</a>
 
 # Technology used
 
