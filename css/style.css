@@ -199,6 +199,7 @@ a:hover {
     left: 0;
     margin: auto;
     right: 0;
+    height: 2px;
     background-color: #111;
     width: 78%;
     transition: 200ms;
